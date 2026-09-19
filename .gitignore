@@ -1,0 +1,26 @@
+# Environment variables & secrets
+.env
+server/.env
+*.env.local
+
+# Node modules & dependencies
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# SQLite Databases & logs
+data/
+server/data/*.db
+server/data/*.db-wal
+server/data/*.db-shm
+*.log
+npm-debug.log*
+
+# Build artifacts
+dist/
+client/dist/
+.vite/
+
+# Operating System Files
+.DS_Store
+Thumbs.db

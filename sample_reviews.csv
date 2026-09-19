@@ -1,0 +1,51 @@
+id,review,category,rating,has_sarcasm
+1,"This product is absolutely amazing! Works perfectly right out of the box.",Electronics,5,false
+2,"Terrible quality. Broke after just two days of normal use.",Electronics,1,false
+3,"Decent product for the price. Nothing special but gets the job done.",Household,3,false
+4,"Oh WOW, my package arrived only three weeks late. What fantastic service!",Shipping,1,true
+5,"The customer support team was incredibly patient and resolved my issue in minutes.",Service,5,false
+6,"Battery life is a joke. Lasts about 45 minutes on a full charge. Great design though!",Electronics,2,false
+7,"Best headphones I've ever owned. The sound quality blew me away.",Electronics,5,false
+8,"Yeah sure, five-star quality... if you live in the 1980s. Completely outdated.",Electronics,1,true
+9,"Good packaging, items arrived safely. Delivery was on time.",Shipping,4,false
+10,"The app crashes constantly. It's like they never even tested it before releasing it.",Software,1,false
+11,"Exceeded all my expectations! Will definitely buy again.",General,5,false
+12,"Meh. It works, I guess. Not worth the price they're charging.",General,2,false
+13,"Outstanding build quality and sleek modern design. Love it!",Electronics,5,false
+14,"Oh yes, because what everyone needs is a device that heats up to the temperature of the sun.",Electronics,1,true
+15,"Average performance. Nothing stands out but it's reliable.",Electronics,3,false
+16,"The food was cold and tasteless. Waited 40 minutes for this disaster.",Food,1,false
+17,"Incredible dining experience. Best meal I've had all year!",Food,5,false
+18,"Sure, let me just pay premium price for something that screams like a jet engine. So peaceful!",Household,1,true
+19,"Quality materials, sturdy construction. Holds up really well.",Household,4,false
+20,"The instructions were completely useless. Had to watch three YouTube videos to set it up.",Electronics,2,false
+21,"Wonderful experience from start to finish. Highly recommend!",Service,5,false
+22,"Customer service was rude and dismissive. Never shopping here again.",Service,1,false
+23,"Fair product at a fair price. Exactly what I expected.",General,3,false
+24,"Oh I just LOVE when a product stops working the day after the warranty expires. Pure coincidence I'm sure.",Electronics,1,true
+25,"Super fast shipping! Got my order two days ahead of schedule.",Shipping,5,false
+26,"The interface is so intuitive. Got everything set up within minutes.",Software,5,false
+27,"Mediocre at best. Expected more based on the advertising.",General,2,false
+28,"Literally the best purchase I've made this year. Life-changing product!",General,5,false
+29,"Wow, what great value for money – said no one ever. Complete waste of cash.",General,1,true
+30,"Good sound quality but the ear cushions are not very comfortable for long sessions.",Electronics,3,false
+31,"Absolutely flawless. Would give 10 stars if I could.",General,5,false
+32,"The device randomly shuts down. I've lost hours of work because of this garbage.",Electronics,1,false
+33,"Pretty good. A few minor issues but overall satisfied with the purchase.",General,4,false
+34,"Oh fantastic, it only took them 4 attempts to ship the correct item. Champions!",Shipping,1,true
+35,"Easy setup, great performance, very happy with this purchase.",Electronics,5,false
+36,"Product feels cheap and plasticky. Not worth the money at all.",General,2,false
+37,"Lovely design and very functional. Exactly as described.",Household,4,false
+38,"Yes, because smelling like a gym locker room is totally what I signed up for. Great fragrance!",Personal,1,true
+39,"Very good product. Minor packaging damage but item inside was perfect.",General,4,false
+40,"Returned immediately. Doesn't work at all. Complete scam.",Electronics,1,false
+41,"Solid construction and responsive controls. Very pleased overall.",Electronics,4,false
+42,"The best thing about this product is that it makes a great paperweight. That's literally all it's good for.",General,1,true
+43,"Fast delivery, well packed, product works great. 5 stars!",General,5,false
+44,"Acceptable performance for everyday use. Wouldn't go out of my way to recommend it though.",General,3,false
+45,"The build quality feels premium. Worth every penny!",Electronics,5,false
+46,"Oh yes, a software update that deleted all my data. How innovative and user-friendly!",Software,1,true
+47,"Comfortable, lightweight, and great audio quality. Exactly what I needed.",Electronics,5,false
+48,"The smell from the packaging was overwhelming and took days to dissipate. Unpleasant experience.",General,2,false
+49,"Everything about this purchase was perfect. No complaints whatsoever.",General,5,false
+50,"Wow, what a rollercoaster. Surprisingly good in some areas, disappointingly bad in others.",General,3,false
