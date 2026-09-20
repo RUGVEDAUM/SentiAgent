@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
+import path from 'path';                        // CHANGE 1: new imports
+import fs from 'fs';
+import { fileURLToPath } from 'url';
 import { config } from './config/env.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import authRoutes from './routes/authRoutes.js';
@@ -9,7 +12,12 @@ import analysisRoutes from './routes/analysisRoutes.js';
 import statusRoutes from './routes/statusRoutes.js';
 import { closeDb } from './config/db.js';
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 const app = express();
+
+// CHANGE 2: trust Render's proxy so rate limiting sees each visitor's real IP
+app.set('trust proxy', 1);
 
 // --- Rate Limiting ---
 const generalLimiter = rateLimit({
@@ -55,7 +63,7 @@ app.use(cors({
 app.use(cookieParser());
 app.use(express.json({ limit: '15mb' }));
 app.use(express.urlencoded({ extended: true, limit: '15mb' }));
-app.use(generalLimiter);
+app.use('/api', generalLimiter);                // CHANGED: limit only API calls, not page files
 
 // --- Health Check ---
 app.get('/health', (req, res) => {
@@ -66,6 +74,16 @@ app.get('/health', (req, res) => {
 app.use('/api/status', statusRoutes);
 app.use('/api/auth', authLimiter, authRoutes);
 app.use('/api/analyses', analysisLimiter, analysisRoutes);
+
+// CHANGE 3: serve the built React app (client/dist) from this same server
+const clientDist = path.resolve(__dirname, '../../client/dist');
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) return next();
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+}
 
 // --- Error Handler ---
 app.use(errorHandler);
